@@ -11,5 +11,12 @@ class BusStop
     @queue << person
   end
 
+  def add_people(people)
+    for person in people
+      @queue << person
+    end
+  end 
+
+
 
 end

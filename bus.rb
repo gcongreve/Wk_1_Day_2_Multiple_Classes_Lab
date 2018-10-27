@@ -28,4 +28,12 @@ class Bus
     @passengers = []
   end
 
+  def pick_up_from_stop(bus_stop)
+    waiting_at_stop = bus_stop.queue
+    for person in waiting_at_stop
+      @passengers << person
+    end 
+  end
+
+
 end
